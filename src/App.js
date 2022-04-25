@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import Landing from './components/Landing'
+import React, { useState } from 'react';
+import Cursor from './components/Cursor'
 
 function App() {
+
+  const [MousePosition, setMousePosition] = useState({
+    left: 0,
+    top: 0
+})
+function handleMouseMove(ev) { 
+setMousePosition({left: ev.pageX, top: ev.pageY}); 
+}
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Landing />
+      <Cursor/>
     </div>
   );
 }
