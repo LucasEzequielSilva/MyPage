@@ -1,5 +1,12 @@
 *{
+  scroll-behavior: smooth;
   cursor: none;
+  user-select: none;
+  padding: 0;
+  margin: 0;
+}
+html{
+  overflow-x: hidden !important;
 }
 *::-webkit-scrollbar {
   width: 12px; 
@@ -17,6 +24,9 @@
 }
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #f9fafc;
 }
 .cursor-dot, .cursor-dot-outline{
   pointer-events: none;

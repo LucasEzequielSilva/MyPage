@@ -3,49 +3,9 @@
   margin-top: 1rem;
   align-self: flex-start;
   align-content: flex-start;
+  color: #242525;
 }
-.logo {
-  font-family: "Akira Expanded", sans-serif;
-  color: transparent;  
-  pointer-events: none;
-  border-radius: 1rem;
-  padding: 0 0.5rem;
-  background-color: #91d370;
-background-image: linear-gradient(319deg, #91d370 0%, #bca0ff 37%, #f2cd54 100%);
--webkit-background-clip: text;
-background-clip: text;
-}
-.circle-nav {
-  left: 0 !important;
-  top: 0 !important;
-  width: 30rem;
-  height: 30rem;
-}
-.nav-items {
-  font-family: "Poppins";
-  font-weight: 600;
-  font-size: small;
-  color: #363636;
-  transition: all 1s;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-}
-.nav-items:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #363636;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.nav-items{
+  color: #242525!important;
+  background-color: #242525;
 }
