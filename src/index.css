@@ -23,3 +23,77 @@ code {
     animation-delay: 4s;
   }
 }
+.top-to-btm{
+  position: relative;
+  z-index: 9999;
+}
+.icon-position{
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  z-index: 20;
+}
+.icon-style{
+  background-color: #551B54;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  cursor: pointer;
+  animation: movebtn 3s ease-in-out infinite;
+  transition: all .5s ease-in-out;
+  -webkit-animation: movebtn 3s ease-in-out infinite;
+}
+.icon-style:hover{
+  animation: none;
+  background: #fff;
+  color: #551B54;
+  border: 2px solid #551B54;
+}
+@keyframes movebtn {
+  0%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(20px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  75%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.styles_scroll-to-top__2A70v {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(1rem);
+    right: 40px;
+    bottom: 40px;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 50%!important;
+    width: 40px;
+    height: 40px;
+    transition: opacity 1s ease-in-out;
+    box-shadow: 0 9px 25px 0 rgb(132 128 177 / 28%);
+    border: none;
+    outline: none;
+    -webkit-border-radius: 50%!important;
+    -moz-border-radius: 50%!important;
+    -ms-border-radius: 50%!important;
+    -o-border-radius: 50%!important;
+}
+.styles_scroll-to-top__2A70v svg{
+  width: 1rem!important;
+  height: 1rem!important;
+  color: #fff!important;
+
+}

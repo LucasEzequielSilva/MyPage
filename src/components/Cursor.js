@@ -94,7 +94,7 @@ const Cursor = () => {
   return (
     <div className="cursor">
         <div ref={dotOutLine} className='cursor-dot-outline'></div>
-        <img ref={dot} className='cursor-dot' src='https://emojipedia-us.s3.amazonaws.com/source/skype/289/fire_1f525.png'/>
+        <img ref={dot} className='cursor-dot' src='https://help.apple.com/assets/61D4C1B5425F2576373C512A/61D4C1B7425F2576373C5132/es_ES/a0d5e859e5f2b01dbbf81dfc38a3a92f.png'/>
 </div>
   )
 }

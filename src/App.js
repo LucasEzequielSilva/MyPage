@@ -3,7 +3,6 @@ import './App.css';
 import Landing from './components/Landing'
 import React, { useState } from 'react';
 import Cursor from './components/Cursor'
-
 function App() {
 
   const [MousePosition, setMousePosition] = useState({
