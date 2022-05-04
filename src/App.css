@@ -186,6 +186,12 @@ img {
   left: .6rem;
   font-family: poppins;
   backdrop-filter: blur(.2rem);
+  width: auto ;
+}
+.text-mui:hover{
+  border:.1249rem solid #0080fe;
+  background-color: #0080fe ;
+  color: #fff;
 }
 .hipervinculo-portfolio{
   cursor: pointer;

@@ -70,7 +70,7 @@ const Landing = () => {
                     <h1 className='service-title'>
                         Sobre mi<span className='service-punto'>.</span>
                     </h1>
-                    <img className='wave' src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/325/water-wave_1f30a.png' />
+                    {/* <img className='wave' src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/325/water-wave_1f30a.png' /> */}
                 </div>
                 <div className='main-service'>
                     <div className='habilities'>
@@ -209,7 +209,7 @@ const Landing = () => {
                     <h1 className='service-title'>
                         Mi portfolio<span className='service-punto portfolio-punto'>.</span>
                     </h1>
-                    <img className='wave' src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/325/briefcase_1f4bc.png' />
+                    {/* <img className='wave' src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/325/briefcase_1f4bc.png' /> */}
                 </div>
                 <Carousel/>
                 </div>
