@@ -143,9 +143,8 @@ const Landing = () => {
                             UN POCO DE MI
                         </span>
                         <p className='resumen-text'>
-                            Me percibo como una persona trabajadora, creativa y por sobre todo con hambre de progreso.
-                            Si hay algo que me gusta de esta vida es crear.. la atracción con ese sentimiento siempre esta presente ya sea en mis hobbies como en el trabajo que desempeñe.. cada cosa que aprendo busco perfeccionarla a su 100% para poder darle valor.
-                            Acerca de mis valores... ¿Cuales son las cosas que mas me importan? sin dudas mi familia, mi pilar en todo lo que hago.. son el motivo de mi esfuerzo cada noche de estudios, y son el motivo de que me quiera superar como persona.
+                        Desarrollador Full Stack MERN & Mobile Apps y actualmente capacitándose en Diseño UX/UI.
+Me gusta entender los problemas que hay que resolver y me exijo constantemente para mejorar. Mi rutina diaria se basa en desarrollar aplicaciones atractivas por mi cuenta siempre pensando en la experiencia de usuario y adquirir constantemente información de las nuevas tecnologías usadas, mi objetivo es fortalecer mis debilidades en la disciplina y progresar ampliamente en otras que me ayuden en el desarrollo.
                         </p>
                         <span className='habilities-text resumen'>
                             TECNOLOGIAS
@@ -220,7 +219,7 @@ const Landing = () => {
             <div className='services portfolio'>
                 <div className='container-title'>
                     <h1 className='service-title'>
-                        Educación<span className='service-punto educación-punto'>.</span>
+                        Capacitaciones<span className='service-punto educación-punto'>.</span>
                     </h1>
                     {/* <img className='wave' src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/325/briefcase_1f4bc.png' /> */}
                 </div>
