@@ -25,6 +25,10 @@ import MongoDB from '../assets/mongodb.png';
 import Express from '../assets/express.png';
 import ScrollToTop from "react-scroll-to-top";
 import Carousel from './Carousel'
+import Timeline from './Timeline'
+import { AiOutlineGithub } from 'react-icons/ai'
+import { AiOutlineLinkedin } from 'react-icons/ai'
+
 const Landing = () => {
     return (
         <>
@@ -211,8 +215,24 @@ const Landing = () => {
                     </h1>
                     {/* <img className='wave' src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/325/briefcase_1f4bc.png' /> */}
                 </div>
-                <Carousel/>
+                <Carousel />
+            </div>
+            <div className='services portfolio'>
+                <div className='container-title'>
+                    <h1 className='service-title'>
+                        Educación<span className='service-punto educación-punto'>.</span>
+                    </h1>
+                    {/* <img className='wave' src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/325/briefcase_1f4bc.png' /> */}
                 </div>
+                <Timeline />
+                <footer>
+                    <p>Lucas Ezequiel Silva</p>
+                    <div className='social-icons'>
+                        <a href='https://www.linkedin.com/in/lucasezequielsilva/'><AiOutlineLinkedin /></a>
+                        <a href='https://github.com/Mrain00'><AiOutlineGithub /></a>
+                    </div>
+                </footer>
+            </div>
         </>
     )
 }

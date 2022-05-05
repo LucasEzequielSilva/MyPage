@@ -51,14 +51,15 @@ img {
   -o-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 .cursor-dot {
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1.7rem;
+  height: 1.7rem;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   z-index: 9999;
+  margin: auto;
 }
 .cursor-dot-outline {
   height: 1rem;
@@ -72,66 +73,50 @@ img {
 
 .swiper {
   width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-
-.swiper-slide {
-  z-index: 1;
-
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+  flex-wrap: wrap;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
+  justify-content:space-evenly;
   align-items: center;
+  z-index: 1;
 }
+
 .swiper-slide img {
   display: block;
-  height:22rem !important;
-  width:100% !important;
+  width: 100% !important;
   border-radius: 14px;
   object-fit: cover;
   object-position: 0%;
-  -webkit-border-radius: 14px;
-  -moz-border-radius: 14px;
-  -ms-border-radius: 14px;
-  -o-border-radius: 14px;
 }
 .swiper-slide {
-  min-height:22rem !important;
-  width:39rem !important;
+  width: 25rem !important;
   border-radius: 14px;
+  transition: 3s;
+  -webkit-transition: 3s;
+  -moz-transition: 3s;
+  -ms-transition: 3s;
+  -o-transition: 3s;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 1rem;
+  cursor: pointer;
+}
+.hipervinculo-portfolio {
+  height: 100%;
+  width: 100%;
+}
+.swiper-slide > a:hover {
+  cursor: pointer;
+  pointer-events: all;
+}
+.text-react {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.swiper-slide:hover{
-  
-}
-.swiper{
-  margin: auto;
-}
-.text-react{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 14px;
-  border:.1249rem solid #60dbfc;
+  border: 0.1249rem solid #60dbfc;
   font-size: 14px;
-  padding: .1rem .3rem;
+  padding: 0.1rem 0.3rem;
   -webkit-border-radius: 14px;
   -moz-border-radius: 14px;
   -ms-border-radius: 14px;
@@ -139,19 +124,19 @@ img {
   color: #60dbfc;
   position: absolute;
   z-index: 99999;
-  bottom: .6rem;
-  left: .6rem;
+  bottom: 0.6rem;
+  left: 0.6rem;
   font-family: poppins;
-  backdrop-filter: blur(.2rem);
+  backdrop-filter: blur(0.2rem);
 }
-.text-js{
+.text-js {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 14px;
-  border:.1249rem solid #f7df1d;
+  border: 0.1249rem solid #f7df1d;
   font-size: 14px;
-  padding: .1rem .3rem;
+  padding: 0.1rem 0.3rem;
   -webkit-border-radius: 14px;
   -moz-border-radius: 14px;
   -ms-border-radius: 14px;
@@ -159,22 +144,22 @@ img {
   color: #f7df1d;
   position: absolute;
   z-index: 99999;
-  bottom: .6rem;
-  left: .6rem;
+  bottom: 0.6rem;
+  left: 0.6rem;
   font-family: poppins;
-  backdrop-filter: blur(.2rem);
+  backdrop-filter: blur(0.2rem);
 }
-.fa-icon{
+.fa-icon {
   width: 1.5rem;
 }
-.text-mui{
+.text-mui {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 14px;
-  border:.1249rem solid #0080fe;
+  border: 0.1249rem solid #0080fe;
   font-size: 14px;
-  padding: .1rem .3rem;
+  padding: 0.1rem 0.3rem;
   -webkit-border-radius: 14px;
   -moz-border-radius: 14px;
   -ms-border-radius: 14px;
@@ -182,17 +167,32 @@ img {
   color: #0080fe;
   position: absolute;
   z-index: 99999;
-  bottom: .6rem;
-  left: .6rem;
+  bottom: 0.6rem;
+  left: 0.6rem;
   font-family: poppins;
-  backdrop-filter: blur(.2rem);
-  width: auto ;
+  backdrop-filter: blur(0.2rem);
+  width: auto;
 }
-.text-mui:hover{
-  border:.1249rem solid #0080fe;
-  background-color: #0080fe ;
+.text-mui:hover {
+  border: 0.1249rem solid #0080fe;
+  background-color: #0080fe;
   color: #fff;
 }
-.hipervinculo-portfolio{
-  cursor: pointer;
+.text-js,
+.text-js > h2,
+.text-js > svg {
+  color: #fff;
+  background-color: #f7df1d;
+}
+.text-react,
+.text-react > h2,
+.text-react > svg {
+  color: #fff;
+  background-color: #60dbfc;
+}
+.text-mui,
+.text-mui > h2,
+.text-mui > svg {
+  color: #fff;
+  background-color: #0080fe;
 }
