@@ -2,7 +2,6 @@ import React, {useRef, useEffect} from 'react'
 
 const Cursor = () => {
   const dot = useRef(null);
-  const dotOutLine = useRef(null);
 
   const delay = 18;
 
@@ -40,21 +39,17 @@ const Cursor = () => {
   const toggleCursorVisibility = ()=>{
     if(cursorVisible.current){
       dot.current.style.opacity = 1;
-      dotOutLine.current.style.opacity = 1;
     }
     else{
       dot.current.style.opacity = 0;
-      dotOutLine.current.style.opacity = 0;
     }
   }
   const toggleCursorSize = ()=>{
     if(cursorEnlarged){
       dot.current.style.transform = 'translate(-50%, -50%) scale(0.75)'
-      dotOutLine.current.style.transform = 'translate(-50%, -50%) scale(1.5)';
     }
     else{
       dot.current.style.transform = 'translate(-50%, -50%) scale(1)'
-      dotOutLine.current.style.transform = 'translate(-50%, -50%) scale(1)';
     }
   }
   const mouseOverEvent=()=>{
@@ -86,14 +81,11 @@ const Cursor = () => {
     _x.current +=(endX.current - _x.current) / delay
     _y.current +=(endY.current - _y.current) / delay
 
-    dotOutLine.current.style.top = _y.current + 'px'
-    dotOutLine.current.style.left = _x.current + 'px'
     
     requestRef.current = requestAnimationFrame(animateDotOutline)
   }
   return (
     <div className="cursor">
-        <div ref={dotOutLine} className='cursor-dot-outline'></div>
         <img ref={dot} className='cursor-dot' src='https://help.apple.com/assets/61D4C1B5425F2576373C512A/61D4C1B7425F2576373C5132/es_ES/a0d5e859e5f2b01dbbf81dfc38a3a92f.png'/>
 </div>
   )

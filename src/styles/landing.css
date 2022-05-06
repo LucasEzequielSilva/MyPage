@@ -415,6 +415,9 @@ section {
     text-align: center;
     font-size: 0.88rem;
   }
+  .habilities-blandas{
+    margin-right: 10rem!important;
+  }
 }
 .habilities-text {
   text-align: left;
@@ -570,6 +573,11 @@ section {
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0!important;
+    width: 100%;
 }
 .habilities-blandas > p {
   padding: 0.05rem 0.3rem;
