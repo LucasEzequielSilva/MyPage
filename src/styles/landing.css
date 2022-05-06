@@ -699,6 +699,9 @@ footer>p{
   color: rgba(0, 0, 0, 0.4);
 }
 @media (max-width:480px){
+  .yo {
+    display: none;
+  }
   .frontend, .backend, .design{
     width: 90%;
   }
