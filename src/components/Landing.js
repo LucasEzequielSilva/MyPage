@@ -218,7 +218,7 @@ Me gusta entender los problemas que hay que resolver y me exijo constantemente p
             </div>
             <div className='services portfolio'>
                 <div className='container-title'>
-                    <h1 className='service-title'>
+                    <h1 className='service-title capacitaciones'>
                         Capacitaciones<span className='service-punto educación-punto'>.</span>
                     </h1>
                     {/* <img className='wave' src='https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/325/briefcase_1f4bc.png' /> */}

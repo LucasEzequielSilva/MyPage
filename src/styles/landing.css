@@ -342,6 +342,8 @@ section {
   -webkit-animation: animatedText 2s infinite;
   text-align: center;
   align-items: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 .service-punto {
   background: linear-gradient(135deg, #73dfe7 0%, #0063f7 100%);
@@ -695,4 +697,19 @@ footer>p{
 .social-icons svg{
   margin: .4rem;
   color: rgba(0, 0, 0, 0.4);
+}
+@media (max-width:480px){
+  .frontend, .backend, .design{
+    width: 90%;
+  }
+  .frontend>img, .backend>img, .design>img{
+    width: 50%;
+  }
+  .frontend>p, .backend>p, .design>p{
+    width: 50%;
+    font-size: .58rem;
+  }
+  .capacitaciones{
+    font-size: 2rem;
+  }
 }
